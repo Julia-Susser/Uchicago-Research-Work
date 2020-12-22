@@ -25,15 +25,15 @@ First, I read in a dataframe with dissimilarity within each two digit occupation
 
 
 <img width="343" alt="Screen Shot 2020-12-22 at 12 00 02 PM" src="https://user-images.githubusercontent.com/57605923/102928500-a5d06280-444d-11eb-87b3-0731c2e9bb41.png">
-Path: ~ /Uchicago Research Work/Compute distance-dissimilarity/src/plotting/2digit_plotting.Rmd
-Languages: R, ggplot2
-I read in the PCA data for SPCA with 7 PCs. Then I split the dataframe by the decade, so I had a dataframes with the 2digit weighted dissimilarity for 1980s and 1990s. Next, I merged the data frames by 2digit occupation, and for each 2digit occupation, I subtracted the weighted dissimilarity 1980s from the weighted dissimilarity 1990s. Before graphing, I merged in 1 digit occupational labels. On the y axis, I graphed the change dissimilarity/specialization for each two digit occupation. Indeed, this shows that Production and Operators had the greatest change in dissimilarity/specialization.
-
-
-<img width="361" alt="Screen Shot 2020-12-22 at 12 00 09 PM" src="https://user-images.githubusercontent.com/57605923/102928501-a7018f80-444d-11eb-98d8-f507599744b0.png">
 Path: ~ /Uchicago Research Work/CPS Cleaning and Graphs/src/Graphs/R graphs/mean_log_wage_by_occ graph_3digit.Rmd
 Languages: R, ggplot2
 First, I split the data into two data frames with years 1983 and 2001 (max and min years).  Next for both dataframes, I grouped the data by three digit occupation and calculated the weighted mean log wage from each three digit occupation. To find the difference of the mean log wage between 1983 and 2001 for each three digit occupation, I contacted the two aggregate data frames and subtracted the 1983 mean log wage from the 2001 mean log wage. Then, I merged in the one digit occupation labels with the data frame. Finally, I plotted the data. I plotted the three digit occupation on the x column but reordered by 1983 occupational mean log wage. On the y column, I plotted change in mean log hourly wage. Along with creating a smooth line that highlighted trends, I filled the data points based on the one digit occupation.
+
+
+<img width="361" alt="Screen Shot 2020-12-22 at 12 00 09 PM" src="https://user-images.githubusercontent.com/57605923/102928501-a7018f80-444d-11eb-98d8-f507599744b0.png">
+Path: ~ /Uchicago Research Work/Compute distance-dissimilarity/src/plotting/2digit_plotting.Rmd
+Languages: R, ggplot2
+I read in the PCA data for SPCA with 7 PCs. Then I split the dataframe by the decade, so I had a dataframes with the 2digit weighted dissimilarity for 1980s and 1990s. Next, I merged the data frames by 2digit occupation, and for each 2digit occupation, I subtracted the weighted dissimilarity 1980s from the weighted dissimilarity 1990s. Before graphing, I merged in 1 digit occupational labels. On the y axis, I graphed the change dissimilarity/specialization for each two digit occupation. Indeed, this shows that Production and Operators had the greatest change in dissimilarity/specialization.
 
 
 <img width="548" alt="Screen Shot 2020-12-22 at 11 59 22 AM" src="https://user-images.githubusercontent.com/57605923/102928502-a79a2600-444d-11eb-9711-be76db53811d.png">
@@ -63,17 +63,37 @@ I read in the regular  PCA data with 3 PCs in 5 year bins. Then, I adjusted 1 di
 
 
 <img width="534" alt="Screen Shot 2020-12-22 at 11 59 44 AM" src="https://user-images.githubusercontent.com/57605923/102928507-a8cb5300-444d-11eb-973d-2c78f743a0f5.png">
+Path: ~ /Uchicago Research Work/CPS Cleaning and Graphs/src/Graphs/R graphs/years_school v wage graph.Rmd
+Language: R, ggplot2
+First, I split the dataframe by the year's school constraints and added the labels (CLG, GTC or ect.). Next, I concatted the split dataframes, which now had years of school labels. Then I grouped the new dataframe by sex, label and year to find the aggregate mean log wage.  Next, I filtered through the aggregate dataframe, which had a new mean log wage for every sex, label and year, and plotted the lines. 
+
+<img width="302" alt="Screen Shot 2020-12-22 at 12 01 53 PM" src="https://user-images.githubusercontent.com/57605923/102928509-a963e980-444d-11eb-9521-14d401712634.png">
+Path: ~ /Uchicago Research Work/Routineness Ad Graphs/src/Dissimilarity sorted/dissimilarity-sorted-routineness.Rmd
+Languages: R, ggplot2
+I read in the regular PCA data with 3 PCs. Then I split the dataframe by the decade, so I had a dataframes with the 2digit weighted dissimilarity for 1980s and 1990s. Next, I merged the data frames by 2digit occupation, and for each 2digit occupation, I subtracted the weighted dissimilarity 1980s from the weighted dissimilarity 1990s. Then, I merged in 1 digit occupational codes to get the labels. Next, I read in dta file of routineness and grouped by 2 digit occupation in 1983 to find weighted routines for each 2digit occupation. Finally, I merged the weighted routineness in 1983 data with the PCA code. Next, I sorted the 2digit occupations by routineness and put number id on each occupation by routines. On the y axis, I graphed the change dissimilarity/specialization. On the x-axis, I graphed the ids of each occupation and added their names as labels. Because I used number ids on the x-axis, I could add a smooth line to fit the data. The graph highlights how jobs that require more routine manual skill (based on ads) have become more similar to each other, as the average total distances from the mean of PCs of the jobs within those sectors has become smaller.
+
+<img width="398" alt="Screen Shot 2020-12-22 at 11 59 51 AM" src="https://user-images.githubusercontent.com/57605923/102928510-a963e980-444d-11eb-857c-77c0f92e14ee.png">
+Path: ~ /Uchicago Research Work/CPS Cleaning and Graphs/src/Graphs/R graphs/mean_log_wage_2digit.Rmd
+Languages: R, ggplot2
+First, I split the data into two data frames with years 1983 and 2001 (max and min years).  Next, for both dataframes, I grouped the data by two digit occupation and calculated the weighted mean log wage from each two digit occupation. To find the difference of the mean log wage between 1983 and 2001 for each two digit occupation, I contacted the two aggregate data frames and subtracted the 1983 mean log wage from the 2001 mean log wage. Then, I merged in the two digit occupations labels and one digit occupation labels with the dataframe. Finally, I plotted the data in  a bar chart. I plotted the two digit occupation on the x column but reordered the occupations by 1983 occupational mean log wage. On the y column, I plotted change in mean log hourly wage. I also filled the bar chart based on one digit occupation.
+
+Analysis: This graph highlights how medium wage jobs have decreased in wage due to automation. Between 1980-2000, production was automated and therefore there was less need for people in the Production/Operators field. The Production/Operators field used to be unpleasant jobs in a factory, so they were medium wage. However, now that there is no need for factory workers, there are Production/Operating jobs because almost all the work has been replaced by machines. Therefore, more people have been diverted to Service jobs or in some cases, higher expertised jobs.
+
+
+<img width="557" alt="Screen Shot 2020-12-22 at 12 01 27 PM" src="https://user-images.githubusercontent.com/57605923/102928518-ae289d80-444d-11eb-9073-eba62b77f1b6.png">
 Path: ~ /Uchicago Research Work/Routineness Ad Graphs/src/routineness occ graphs/keyword-1digit.Rmd
 First, I read in the occupational advertisement dataset from a dta file. Then, I grouped by one digit occupation and year to find the weighted mean of each of these skills. The weights were the number of ads about each 3digit occupation occupation. Next, I merged in 1digit occupation labels and graphed the weighted mean mentions of each skill per ad on the y axis over time. This graph mirrors a published research paper to confirm that our data was correct.
 
-
-<img width="302" alt="Screen Shot 2020-12-22 at 12 01 53 PM" src="https://user-images.githubusercontent.com/57605923/102928509-a963e980-444d-11eb-9521-14d401712634.png">
-
-<img width="398" alt="Screen Shot 2020-12-22 at 11 59 51 AM" src="https://user-images.githubusercontent.com/57605923/102928510-a963e980-444d-11eb-857c-77c0f92e14ee.png">
-
-<img width="557" alt="Screen Shot 2020-12-22 at 12 01 27 PM" src="https://user-images.githubusercontent.com/57605923/102928518-ae289d80-444d-11eb-9073-eba62b77f1b6.png">
-<img width="708" alt="Screen Shot 2020-12-22 at 11 51 02 AM" src="https://user-images.githubusercontent.com/57605923/102928530-b1238e00-444d-11eb-9b1f-1d8bf1268ddf.png">
 <img width="603" alt="Screen Shot 2020-12-22 at 11 59 09 AM" src="https://user-images.githubusercontent.com/57605923/102928531-b1bc2480-444d-11eb-9d15-84db1acc9e1b.png">
+Path: ~ /Uchicago Research Work/CPS Cleaning and Graphs/src/Graphs/percent one-digit-occ
+Languages: Python, Pandas, Matplotlib
+First, I grouped the data by sex and year; then I made an aggregate dataframe with the weighted number of rows.  Next, I made another dataframe that grouped the data by sex, year and one digit occupation and also made an aggregate of the weighted number of rows. Then, I merged the dataframes by sex and year and calculated the percent of workers in each occupation by year. Next I went through the aggregate dataframe and plotted a new line each time there was a new 1digit occupation.
+
+
 <img width="478" alt="Screen Shot 2020-12-22 at 11 59 17 AM" src="https://user-images.githubusercontent.com/57605923/102928533-b254bb00-444d-11eb-9b05-9d570f9eeb14.png">
+Path: ~ /Uchicago Research Work/CPS Cleaning and Graphs/src/Graphs/average age
+Languages: Python, Pandas, Matplotlib, Numpy
+To create this graph, I made an array of arrays. First, I created an array by sex, then inside of it, I created an arrays by year. Next, I created a loop where I first grabbed the male array then the female array, and inside  of this loop, I calculated the weighted mean average age by year of the inner array and plotted the line. 
+
 
 
