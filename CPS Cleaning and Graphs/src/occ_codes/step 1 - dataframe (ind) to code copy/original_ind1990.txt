@@ -1,0 +1,8996 @@
+﻿000
+	NIU
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	AGRICULTURE, FORESTRY, AND FISHERIES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	010
+	Agricultural production, crops
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	011
+	Agricultural production, livestock
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	012
+	Veterinary services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	020
+	Landscape and horticultural services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	030
+	Agricultural services, n.e.c.
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	031
+	Forestry
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	032
+	Fishing, hunting, and trapping
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	MINING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	040
+	Metal mining
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	041
+	Coal mining
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	042
+	Oil and gas extraction
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	050
+	Nonmetallic mining and quarrying, except fuels
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	CONSTRUCTION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	060
+	All construction
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	MANUFACTURING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Nondurable Goods Food and kindred products:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	100
+	Meat products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	101
+	Dairy products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	102
+	Canned, frozen, and preserved fruits and vegetables
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	110
+	Grain mill products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	111
+	Bakery products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	112
+	Sugar and confectionery products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+120
+	Beverage industries
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	121
+	Misc. food preparations and kindred products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	122
+	Food industries, n.s.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	130
+	Tobacco manufactures
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Textile mill products:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	132
+	Knitting mills
+	X
+	·
+	·
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	140
+	Dyeing and finishing textiles, except wool and knit goods
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	141
+	Carpets and rugs
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	142
+	Yarn, thread, and fabric mills
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	150
+	Miscellaneous textile mill products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Apparel and other finished textile products:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	151
+	Apparel and accessories, except knit
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	152
+	Miscellaneous fabricated textile products
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+
+
+	Paper and allied products:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	160
+	Pulp, paper, and paperboard mills
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	161
+	Miscellaneous paper and pulp products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	162
+	Paperboard containers and boxes
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Printing, publishing, and allied industries:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	171
+	Newspaper publishing and printing
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	172
+	Printing, publishing, and allied industries, except newspapers
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Chemicals and allied products:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	180
+	Plastics, synthetics, and resins
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	181
+	Drugs
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	182
+	Soaps and cosmetics
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	190
+	Paints, varnishes, and related products
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+191
+	Agricultural chemicals
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	192
+	Industrial and miscellaneous chemicals
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Petroleum and coal products:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	200
+	Petroleum refining
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	201
+	Miscellaneous petroleum and coal products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Rubber and miscellaneous plastics products:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	210
+	Tires and inner tubes
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	211
+	Other rubber products, and plastics footwear and belting
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	212
+	Miscellaneous plastics products
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+
+
+	Leather and leather products:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	220
+	Leather tanning and finishing
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	221
+	Footwear, except rubber and plastic
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	222
+	Leather products, except footwear
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	229
+	Manufacturing, non-durable - allocated
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+
+
+	Durable Goods:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Lumber and woods products, except furniture:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	230
+	Logging
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	231
+	Sawmills, planing mills, and millwork
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	232
+	Wood buildings and mobile homes
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	241
+	Miscellaneous wood products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	242
+	Furniture and fixtures
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Stone, clay, glass and concrete products:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	250
+	Glass and glass products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	251
+	Cement, concrete, gypsum, and plaster products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	252
+	Structural clay products
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+261
+	Pottery and related products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	262
+	Misc. nonmetallic mineral and stone products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Metal industries:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	270
+	Blast furnaces, steelworks, rolling and finishing mills
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	271
+	Iron and steel foundries
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	272
+	Primary aluminum industries
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	280
+	Other primary metal industries
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	281
+	Cutlery, handtools, and general hardware
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	282
+	Fabricated structural metal products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	290
+	Screw machine products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	291
+	Metal forgings and stampings
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	292
+	Ordnance
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	300
+	Miscellaneous fabricated metal products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	301
+	Metal industries, n.s.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Machinery and computing equipment:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	310
+	Engines and turbines
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	311
+	Farm machinery and equipment
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	312
+	Construction and material handling machines
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	320
+	Metalworking machinery
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	321
+	Office and accounting machines
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	322
+	Computers and related equipment
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	331
+	Machinery, except electrical, n.e.c.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	332
+	Machinery, n.s.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Electrical machinery, equipment, and supplies:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	340
+	Household appliances
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+341
+	Radio, TV, and communication equipment
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	342
+	Electrical machinery, equipment, and supplies, n.e.c.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	350
+	Electrical machinery, equipment, and supplies, n.s.
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+
+
+	Transportation equipment:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	351
+	Motor vehicles and motor vehicle equipment
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	352
+	Aircraft and parts
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	360
+	Ship and boat building and repairing
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	361
+	Railroad locomotives and equipment
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	362
+	Guided missiles, space vehicles, and parts
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	370
+	Cycles and miscellaneous transportation equipment
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Professional and photographic equipment, and watches:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	371
+	Scientific and controlling instruments
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	372
+	Medical, dental, and optical instruments and supplies
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	380
+	Photographic equipment and supplies
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	381
+	Watches, clocks, and clockwork operated devices
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	390
+	Toys, amusement, and sporting goods
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	391
+	Miscellaneous manufacturing industries
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	392
+	Manufacturing industries, n.s.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	TRANSPORTATION, COMMUNICATIONS, AND OTHER PUBLIC UTILITIES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Transportation:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	400
+	Railroads
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	401
+	Bus service and urban transit
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	402
+	Taxicab service
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	410
+	Trucking service
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	411
+	Warehousing and storage
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+412
+	U.S. Postal Service
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	420
+	Water transportation
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	421
+	Air transportation
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	422
+	Pipe lines, except natural gas
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	432
+	Services incidental to transportation
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Communications:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	440
+	Radio and television broadcasting and cable
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	441
+	Wired communications
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	442
+	Telegraph and miscellaneous communications services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Utilities and sanitary services:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	450
+	Electric light and power
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	451
+	Gas and steam supply systems
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	452
+	Electric and gas, and other combinations
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	470
+	Water supply and irrigation
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	471
+	Sanitary services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	472
+	Utilities, n.s.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	WHOLESALE TRADE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Durable Goods:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	500
+	Motor vehicles and equipment
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	501
+	Furniture and home furnishings
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	502
+	Lumber and construction materials
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	510
+	Professional and commercial equipment and supplies
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	511
+	Metals and minerals, except petroleum
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	512
+	Electrical goods
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	521
+	Hardware, plumbing and heating supplies
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+530
+	Machinery, equipment, and supplies
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	531
+	Scrap and waste materials
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	532
+	Miscellaneous wholesale, durable goods
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	Nondurable Goods:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	540
+	Paper and paper products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	541
+	Drugs, chemicals, and allied products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	542
+	Apparel, fabrics, and notions
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	550
+	Groceries and related products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	551
+	Farm-product raw materials
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	552
+	Petroleum products
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	560
+	Alcoholic beverages
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	561
+	Farm supplies
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	562
+	Miscellaneous wholesale, nondurable goods
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	571
+	Wholesale trade, n.s.
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+
+
+	RETAIL TRADE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	580
+	Lumber and building material retailing
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	581
+	Hardware stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	582
+	Retail nurseries and garden stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	590
+	Mobile home dealers
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	591
+	Department stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	592
+	Variety stores
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	600
+	Miscellaneous general merchandise stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	601
+	Grocery stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	602
+	Dairy products stores
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	610
+	Retail bakeries
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+611
+	Food stores, n.e.c.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	612
+	Motor vehicle dealers
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	620
+	Auto and home supply stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	621
+	Gasoline service stations
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	622
+	Miscellaneous vehicle dealers
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	623
+	Apparel and accessory stores, except shoe
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	630
+	Shoe stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	631
+	Furniture and home furnishings stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	632
+	Household appliance stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	633
+	Radio, TV, and computer stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	640
+	Music stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	641
+	Eating and drinking places
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	642
+	Drug stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	650
+	Liquor stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	651
+	Sporting goods, bicycles, and hobby stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	652
+	Book and stationery stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	660
+	Jewelry stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	661
+	Gift, novelty, and souvenir shops
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	662
+	Sewing, needlework, and piece goods stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	663
+	Catalog and mail order houses
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	670
+	Vending machine operators
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	671
+	Direct selling establishments
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	672
+	Fuel dealers
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	681
+	Retail florists
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	682
+	Miscellaneous retail stores
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+691
+	Retail trade, n.s.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	FINANCE, INSURANCE, AND REAL ESTATE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	700
+	Banking
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	701
+	Savings institutions, including credit unions
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	702
+	Credit agencies, n.e.c.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	710
+	Security, commodity brokerage, and investment companies
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	711
+	Insurance
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	712
+	Real estate, including real estate-insurance offices
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	BUSINESS AND REPAIR SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	721
+	Advertising
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	722
+	Services to dwellings and other buildings
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	731
+	Personnel supply services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	732
+	Computer and data processing services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	740
+	Detective and protective services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	741
+	Business services, n.e.c.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	742
+	Automotive rental and leasing, without drivers
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	750
+	Automobile parking and carwashes
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	751
+	Automotive repair and related services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	752
+	Electrical repair shops
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	760
+	Miscellaneous repair services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	PERSONAL SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	761
+	Private households
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	762
+	Hotels and motels
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	770
+	Lodging places, except hotels and motels
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	771
+	Laundry, cleaning, and garment services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+772
+	Beauty shops
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	780
+	Barber shops
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	781
+	Funeral service and crematories
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	782
+	Shoe repair shops
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	X
+	X
+	X
+	X
+	790
+	Dressmaking shops
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	791
+	Miscellaneous personal services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	ENTERTAINMENT AND RECREATION SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	800
+	Theaters and motion pictures
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	801
+	Video tape rental
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	802
+	Bowling centers
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	810
+	Miscellaneous entertainment and recreation services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+	PROFESSIONAL AND RELATED SERVICES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	812
+	Offices and clinics of physicians
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	820
+	Offices and clinics of dentists
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	821
+	Offices and clinics of chiropractors
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	822
+	Offices and clinics of optometrists
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	830
+	Offices and clinics of health practitioners, n.e.c.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	831
+	Hospitals
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	832
+	Nursing and personal care facilities
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	840
+	Health services, n.e.c.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	841
+	Legal services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	842
+	Elementary and secondary schools
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	850
+	Colleges and universities
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	851
+	Vocational schools
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	852
+	Libraries
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+
+
+860
+	Educational services, n.e.c.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	861
+	Job training and vocational rehabilitation services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	862
+	Child day care services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	863
+	Family child care homes
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	870
+	Residential care facilities, without nursing
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	871
+	Social services, n.e.c.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	872
+	Museums, art galleries, and zoos
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	873
+	Labor unions
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	880
+	Religious organizations
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	881
+	Membership organizations, n.e.c.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	882
+	Engineering, architectural, and surveying services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	890
+	Accounting, auditing, and bookkeeping services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	891
+	Research, development, and testing services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	892
+	Management and public relations services
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	893
+	Miscellaneous professional and related services
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+	·
+
+
+	PUBLIC ADMINISTRATION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	900
+	Executive and legislative offices
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	901
+	General government, n.e.c.
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	910
+	Justice, public order, and safety
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	921
+	Public finance, taxation, and monetary policy
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	922
+	Administration of human resources programs
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	930
+	Administration of environmental quality and housing programs
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	931
+	Administration of economic programs
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	932
+	National security and international affairs
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+	X
+ACTIVE DUTY MILITARY
+
+Armed Forces:
+940 Army···························
+941 AirForce···························
+942 Navy···························
+950 Marines···························
+951 Coast Guard···························
+952 Armed Forces, branch not specifiedXXXXXXXXXXXXXXXXXXXXXXXXXXX
+960 Military Reserves or National Guard···························
+998 Unknown···························

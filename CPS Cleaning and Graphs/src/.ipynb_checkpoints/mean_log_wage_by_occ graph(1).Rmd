@@ -1,0 +1,82 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+
+df <- read_csv("/Users/jsusser/Dropbox/thesis/4_CPS/clean_HPV/output/current_values.csv")
+min(df$Year)
+max(df$Year)
+```
+
+
+
+
+```{r}
+df1980s <- df %>%
+  filter(Year==min(df$Year))
+df2000s <- df %>%
+  filter(Year==max(df$Year))
+avg1980s <- df1980s %>%
+  group_by(`2digit occupation`) %>%
+  summarize(mean = weighted.mean(log10(Wage), Asecwt))
+avg2000s <- df2000s %>%
+  group_by(`2digit occupation`) %>%
+  summarize(mean = weighted.mean(log10(Wage), Asecwt))
+hf <- avg1980s %>%
+  full_join(avg2000s, 
+            by=c('2digit occupation'='2digit occupation'), 
+            suffix=c("_x","_y")
+            )
+
+hf <- hf %>%
+  mutate(t = mean_y - mean_x)
+```
+
+
+```{r}
+lf <- read_csv("/Users/jsusser/Dropbox/thesis/4_CPS/clean_HPV/output/Codes/2digit_occupations.csv")
+lf <- lf %>%
+  select(-X1)
+hf <- hf %>%
+  left_join(lf, by=c('2digit occupation'='codes'))
+hf <- hf[order(hf$mean_y),ascending=FALSE]
+hf <- hf %>%
+  mutate(id=as.numeric(row.names(hf)))
+```
+
+
+```{r}
+
+
+#hf <- na.omit(hf)
+
+
+#jpeg('rplot.jpeg')
+ggplot(hf, aes(x=id,y=t)) + geom_col(aes(fill=occupation)) + theme(axis.text.x=element_blank()) + labs(title="Weighted 2digit occupation v. Change in Mean Log Wage (1983-2001)", x="2digit occupation ordered by 1980 mean wage (asc)", y=" Weighted Change in Mean Log Wage")
+#dev.off
+```
+
+
+
+
+
+```{r}
+x_walk
+```
+
+
+```{r}
+hf
+```
+
+
+
+
+

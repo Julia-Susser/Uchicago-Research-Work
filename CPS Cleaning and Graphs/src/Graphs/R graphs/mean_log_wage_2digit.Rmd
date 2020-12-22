@@ -1,0 +1,127 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+
+
+df <- read_csv("/Users/jsusser/Dropbox/thesis/4_CPS/clean_HPV/output/current_values.csv")
+df <- df %>%
+  filter(`1digit occupation`!=4)
+min(df$Year)
+max(df$Year)
+```
+
+
+```{r}
+df$`1digit occupation`[df$`1digit occupation` == 6] <- 5
+df <- df %>%
+  filter(Year<=2002)
+df$`1digit occupation`[df$`2digit occupation` == 4] <- 1
+```
+
+
+
+
+```{r}
+df1980s <- df %>%
+  filter(Year==min(df$Year))
+df2000s <- df %>%
+  filter(Year==max(df$Year))
+avg1980s <- df1980s %>%
+  group_by(`2digit occupation`) %>%
+  summarize(`1digit occupation` = first(`1digit occupation`),mean = weighted.mean(log10(Wage), Asecwt))
+avg2000s <- df2000s %>%
+  group_by(`2digit occupation`) %>%
+  summarize(mean = weighted.mean(log10(Wage), Asecwt))
+hf <- avg1980s %>%
+  full_join(avg2000s, 
+            by=c('2digit occupation'='2digit occupation'), 
+            suffix=c("_x","_y")
+            )
+hf <- signif(hf, digits = 4)
+hf <- hf %>%
+  mutate(t = mean_y - mean_x)
+
+hf
+hf
+```
+
+
+```{r}
+lf <- read_csv("/Users/jsusser/Dropbox/thesis/4_CPS/clean_HPV/output/Codes/2digit_occupations.csv")
+lf <- lf %>%
+  select(-X1)
+
+hf <- hf %>%
+  left_join(lf, by=c('2digit occupation'='codes'))
+hf <- hf[order(hf$mean_y),ascending=FALSE]
+hf <- hf %>%
+  mutate(id=as.numeric(row.names(hf)))
+```
+
+
+```{r}
+lf <- read_csv("/Users/jsusser/Dropbox/thesis/4_CPS/clean_HPV/output/Codes/1digit_occupations.csv")
+lf <- lf %>%
+  select(-X1)
+
+lf$`occupation`[lf$`codes` == 2] <- 'Sales/Admin'
+lf$`occupation`[lf$`codes` == 1] <- 'Tech/Manage/Professional'
+lf$`occupation`[lf$`codes` == 5] <- 'Production/Operators'
+hf <- hf %>%
+  left_join(lf, by=c('1digit occupation'='codes'))
+```
+
+
+```{r}
+#hf <- na.omit(hf)
+
+
+
+ggplot(hf, aes(reorder(occupation.x, mean_x),y=t)) +
+  geom_col(aes(fill=occupation.y)) +  
+  theme_light() +
+  theme(legend.title=element_blank())+
+  
+  #scale_x_discrete(guide = guide_axis(n.dodge=3))+
+  
+  scale_fill_manual(values = c("blue2", "black", "#CA0020","darkgreen")) + 
+  theme(axis.text.x=element_text(angle=65,size=10))+
+  
+  
+  labs(title="2digit occupation v. Change in Mean Log Wage (1983-2001)", x="Occupation, sorted by 1983 mean log wage", y="Change in log wage")
+
+
+ggsave("/Users/jsusser/Desktop/r.png", width = 10, height=10)
+```
+
+
+```{r}
+hf
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

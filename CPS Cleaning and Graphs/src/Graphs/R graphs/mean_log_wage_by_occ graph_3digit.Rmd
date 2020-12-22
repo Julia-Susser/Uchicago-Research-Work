@@ -1,0 +1,134 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+
+df <- read_csv("/Users/jsusser/Dropbox/thesis/4_CPS/clean_HPV/output/current_values.csv")
+df <- df %>%
+  filter(`1digit occupation`!=4)
+min(df$Year)
+max(df$Year)
+```
+
+
+```{r}
+df$`1digit occupation`[df$`1digit occupation` == 6] <- 5
+
+df$`1digit occupation`[df$`3digit occupation` == 4] <- 1
+```
+
+
+
+
+```{r}
+df1980s <- df %>%
+  filter(Year==min(df$Year))
+df2000s <- df %>%
+  filter(Year==max(df$Year))
+avg1980s <- df1980s %>%
+  group_by(`3digit occupation`) %>%
+  summarize(`1digit occupation` = first(`1digit occupation`),mean = weighted.mean(log10(Wage), Asecwt))
+avg2000s <- df2000s %>%
+  group_by(`3digit occupation`) %>%
+  summarize(mean = weighted.mean(log10(Wage), Asecwt))
+hf <- avg1980s %>%
+  full_join(avg2000s, 
+            by=c('3digit occupation'='3digit occupation'), 
+            suffix=c("_x","_y")
+            )
+hf <- signif(hf, digits = 4)
+hf <- hf %>%
+  mutate(t = mean_y - mean_x)
+
+hf
+hf
+```
+
+
+
+lf <- read_csv("/Users/jsusser/Dropbox/thesis/3_Notes/deming_xwalk_occ/occ1990dd_titles.csv")
+
+
+hf <- hf %>%
+  left_join(lf, by=c('3digit occupation'='occ1990dd'))
+hf <- hf[order(hf$mean_x),ascending=FALSE]
+hf <- hf %>%
+  mutate(id=as.numeric(row.names(hf)))
+
+
+
+```{r}
+hf <- na.omit(hf)
+lf <- read_csv("/Users/jsusser/Dropbox/thesis/3_Notes/deming_xwalk_occ/occ1990dd_titles.csv")
+
+hf <- hf %>%
+  left_join(lf, by=c('3digit occupation'='occ1990dd'))
+hf <- hf[order(hf$mean_x),ascending=FALSE]
+hf <- hf %>%
+  mutate(id=as.numeric(row.names(hf)))
+lf <- read_csv("/Users/jsusser/Dropbox/thesis/4_CPS/clean_HPV/output/Codes/1digit_occupations.csv")
+lf <- lf %>%
+  select(-X1)
+
+lf$`occupation`[lf$`codes` == 2] <- 'Sales/Admin'
+lf$`occupation`[lf$`codes` == 1] <- 'Tech/Manage/Professional'
+lf$`occupation`[lf$`codes` == 5] <- 'Production/Operators'
+hf <- hf %>%
+  left_join(lf, by=c('1digit occupation'='codes'))
+
+hf$percent = hf$id / min(hf$id)/(max(hf$id)/min(hf$id))
+hf
+```
+
+
+
+
+```{r}
+hf <- hf %>%
+  filter(t<.3&t>-.3)
+ggplot(hf, aes(x=percent,y=t))+geom_point(aes(color=occupation))+geom_smooth()+
+  theme(axis.text.x=element_blank())+
+  scale_x_continuous(breaks=c(0, .25,.5,.75,1)) +
+  theme_light() +
+  theme(legend.title=element_blank())+
+  labs(title="3digit v. Change in Mean Log Wage (1983-2001)", x="Skill Percentile, sorted by 1980 mean log wage", y="Change in log wage")
+ggsave("/Users/jsusser/Desktop/r-3digit.png", width = 10, height=7)
+```
+
+
+```{r}
+hf %>%
+  select(-`1digit occupation`)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
