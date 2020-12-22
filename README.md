@@ -14,7 +14,7 @@ Cleaned CPS government Employment Data according to HPV 2010 paper
   <br />
   3.Calculated wages using CPI and federal minimum wage data
   <br />
-<br /><br />
+<br />
   
 Coded Kernel, Sparse and Regular PCA and then calculated dissimilarity/specialization within sectors.
 <br />
