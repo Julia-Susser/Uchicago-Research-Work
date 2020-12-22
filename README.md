@@ -21,7 +21,7 @@ Found how routineness changed for each occupation over time based on advertiseme
 
 
 <img width="534" alt="Screen Shot 2020-12-22 at 12 02 02 PM" src="https://user-images.githubusercontent.com/57605923/102928491-a36e0880-444d-11eb-8671-0de1f52eb2ba.png">
-Path: ~ /Uchicago Research Work/Routineness Ad Graphs/src/Routineness v Specialization/routine_vs_specialization.Rmd
+Path: ~ /Uchicago Research Work/Routineness Ad Graphs/src/Routineness v Specialization/routine_vs_specialization.Rmd<br/>
 Languages: R, ggplot2
 First, I read in a dataframe with dissimilarity within each two digit occupation and the values of routineness. Then, I filtered for 1975 and I merged in 2digit and 1 digit occupation labels. Next, I scaled the routineness and dissimilarity values from 0-1 through this formula: (value - minimum value for that column)  / (maximum value - minimum value). Next, I graphed the dissimilarity/specialization values on the x axis and the routineness values on the y axis. For example, the graph above shows that Tech/Manage/Professional is the most specialized and the most Nonroutine Analytic in 1975. 
 
