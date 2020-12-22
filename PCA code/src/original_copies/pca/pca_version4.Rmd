@@ -1,0 +1,109 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+library(dplR)
+library(readr)
+library(dplyr)
+library(ggplot2)
+```
+
+
+```{r}
+df <- read_csv("/Users/jsusser/Desktop/occ_skill.csv")
+years <- c(1950,1960,1970,1980,1990,2001)
+t <-1940
+for (yeary in years){
+  lf <- df %>% 
+    filter(year >= t & year <= yeary -1)
+lf <- lf[
+  with(lf, order(occ1990dd, year)),
+]
+h <- lf
+lf <- lf[,-1:-2]
+lf <- lf[,-207:-208]
+lf.pca <- prcomp(lf, center = TRUE)
+for (num in c(3,4,7)){
+k <- lf.pca$x[,1:num]
+write.csv(k,paste("../output/pca/pca",toString(t),"/pca normal ",toString(t), "s_",toString(num), ".csv", sep="", collapse=NULL))
+d <- read_csv(paste("../output/pca/pca",toString(t),"/pca normal ",toString(t), "s_",toString(num), ".csv", sep="", collapse=NULL))
+hh <- c()
+for (x in seq(1,length(h$occ1990dd)))
+{
+  occ <- h$occ1990dd[x]
+  yr <- h$year[x]
+  hh <- append(hh,paste(toString(occ),"_",toString(yr), sep="", collapse=NULL))
+}
+
+d <- d %>% 
+  select(-X1)
+
+row.names(d)<- hh
+write.csv(d,paste("../output/pca/pca",toString(t),"/pca normal ",toString(t), "s_",toString(num), ".csv", sep="", collapse=NULL))
+}
+t  <- yeary 
+}
+```
+
+
+```{r}
+df <- read_csv("../input/occ_skill.csv")
+
+df <- df[
+  with(df, order(occ1990dd, year)),
+]
+h <- df
+df <- df[,-1:-2]
+df <- df[,-207:-208]
+df.pca <- prcomp(df, center = TRUE)
+for (num in c(3,4,7)){
+k <- df.pca$x[,1:num]
+write.csv(k,paste("../output/pca/pca_everything/pca normal ", toString(num), ".csv", sep="", collapse=NULL))
+d <- read_csv(paste("../output/pca/pca_everything/pca normal ", toString(num), ".csv", sep="", collapse=NULL))
+hh <- c()
+for (x in seq(1,length(h$occ1990dd)))
+{
+  occ <- h$occ1990dd[x]
+  yr <- h$year[x]
+  hh <- append(hh,paste(toString(occ),"_",toString(yr), sep="", collapse=NULL))
+}
+
+d <- d %>% 
+  select(-X1)
+
+row.names(d)<- hh
+write.csv(d,paste("../output/pca/pca_everything/pca normal ", toString(num), ".csv", sep="", collapse=NULL))
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+

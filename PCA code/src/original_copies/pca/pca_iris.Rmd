@@ -1,0 +1,52 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+library(dplR)
+library(readr)
+library(foreign)
+library(dplyr)
+library(ggplot2)
+```
+```{r}
+data(iris)
+head(iris)
+summary(iris)
+```
+
+
+```{r}
+myPr <- prcomp(iris[,-5],scale=TRUE)
+myPr
+```
+
+
+```{r}
+biplot(myPr,scale=0)
+```
+
+
+```{r}
+iris2 <- cbind(iris, myPr$x[,1:2])
+ggplot(iris2,aes(PC1,PC2, col=Species, fill=Species)) +
+  stat_ellipse(geom = "polygon", col = "black", alpha =0.5) +
+  geom_point(shape = 21, col="black")
+```
+
+
+```{r}
+iris2 <- cbind(iris, myPr$x[,1:2])
+ggplot(iris2,aes(PC1,PC2)) +
+  geom_point(shape = 21, col="black")
+```
+
+
+```{r}
+iris2
+```

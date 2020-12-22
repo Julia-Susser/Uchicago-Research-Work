@@ -1,0 +1,111 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+library(dplR)
+library(readr)
+library(foreign)
+library(dplyr)
+library(ggplot2)
+library(kernlab)
+```
+
+
+```{r}
+df <- read_csv("/Users/jsusser/Desktop/occ_skill.csv")
+data(df)
+
+#df <- df %>% distinct(occ1990dd, .keep_all = TRUE)
+
+years <- c(1950,1960,1970,1980,1990,2001)
+t <-1940
+for (yeary in years){
+  lf <- df %>% 
+    filter(year >= t & year <= yeary -1)
+  print(lf)
+  t  <- yeary 
+lf <- lf[
+  with(lf, order(occ1990dd, year)),
+]
+h <- lf
+
+lf <- lf[,-1:-2]
+
+kpc <- kpca(~.,data=lf,kernel="rbfdot",
+            kpar=list(sigma=0.2),features=7)
+k <- pcv(kpc)[,1:3]
+
+write.csv(k,"/Users/jsusser/Desktop/pca_kernel_matrix_3.csv")
+d <- read_csv("/Users/jsusser/Desktop/pca_kernel_matrix_3.csv")
+d <- d %>% 
+  mutate(occ = h$occ1990dd, year = h$year)
+d <- d %>% select(-X1)
+write.csv(d,"/Users/jsusser/Desktop/pca_kernel_matrix_3.csv")
+
+k <- pcv(kpc)[,1:4]
+
+write.csv(k,"/Users/jsusser/Desktop/pca_kernel_matrix_4.csv")
+d <- read_csv("/Users/jsusser/Desktop/pca_kernel_matrix_4.csv")
+d <- d %>% 
+  mutate(occ = h$occ1990dd, year = h$year)
+d <- d %>% select(-X1)
+write.csv(d,"/Users/jsusser/Desktop/pca_kernel_matrix_4.csv")
+
+k <- pcv(kpc)[,1:7]
+
+write.csv(k,"/Users/jsusser/Desktop/pca_kernel_matrix_7.csv")
+d <- read_csv("/Users/jsusser/Desktop/pca_kernel_matrix_7.csv")
+d <- d %>% 
+  mutate(occ = h$occ1990dd, year = h$year)
+d <- d %>% select(-X1)
+write.csv(d,"/Users/jsusser/Desktop/pca_kernel_matrix_7.csv")
+}
+
+```
+
+
+
+
+
+
+```{r}
+k <- lf.pca$x[,1:3]
+
+write.csv(k,"/Users/jsusser/Desktop/pca_normal_matrix_3.csv")
+d <- read_csv("/Users/jsusser/Desktop/pca_normal_matrix_3.csv")
+d <- d %>% 
+  mutate(occ = h$occ1990dd, year = h$year)
+d <- d %>% select(-X1)
+write.csv(d,"/Users/jsusser/Desktop/pca_normal_matrix_3.csv")
+
+
+
+```{r}
+hf <- data.frame(row.names(df2),pcv(kpc)[,1:3])
+names(hf) <- c("skills","PC1","PC2","PC3")
+row.names(hf)
+```
+
+
+```{r}
+
+ggplot(hf,aes(PC1,PC2, fill=row.names(hf))) +
+  geom_point(shape = 21, col="black")+
+  theme(legend.position = "none")
+ 
+```
+
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+

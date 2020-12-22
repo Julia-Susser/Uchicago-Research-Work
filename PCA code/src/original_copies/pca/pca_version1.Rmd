@@ -1,0 +1,89 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+library(dplR)
+library(readr)
+library(foreign)
+library(dplyr)
+library(ggplot2)
+```
+
+
+```{r}
+df <- read_csv("/Users/jsusser/Desktop/occ_skill.csv")
+#df <- head(df[!duplicated(df[,c('occ1990dd')]),],20)
+
+df
+```
+```{r}
+pr.out=prcomp(df,scale=TRUE)
+
+```
+
+
+```{r}
+l = tail(names(df),208)
+
+```
+
+
+```{r}
+#pr.out$center
+```
+
+
+```{r}
+#pr.out$scale
+```
+
+
+```{r}
+#pr.out$rotation
+names(df)
+```
+
+
+```{r}
+dim(pr.out$x)
+
+```
+
+
+```{r}
+png("/Users/jsusser/Desktop/image.png", width = 2000, height = 2000)
+
+biplot(pr.out)
+```
+
+
+```{r}
+pr.out$rotation=-pr.out$rotation
+pr.out$x=-pr.out$x
+
+png("/Users/jsusser/Desktop/image.png", width = 2000, height = 2000)
+biplot (pr.out, scale =0)
+dev.off
+```
+
+
+```{r}
+pr.out=head(pr.out)
+
+```
+
+
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+

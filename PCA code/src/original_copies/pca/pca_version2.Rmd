@@ -1,0 +1,54 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+library(dplR)
+library(readr)
+library(foreign)
+library(dplyr)
+library(ggplot2)
+```
+```{r}
+df <- read_csv("/Users/jsusser/Desktop/occ_skill.csv")
+data(df)
+
+
+
+
+
+
+df <- df %>% distinct(occ1990dd, .keep_all = TRUE)
+head(df)
+```
+
+
+```{r}
+df11 <- df[,-1:-2]
+df11
+```
+
+
+```{r}
+myPr <- prcomp(df11, scale=TRUE)
+myPr
+```
+
+
+```{r}
+biplot(myPr,scale=0)
+```
+
+
+```{r}
+df2 <- cbind(df, myPr$x[,1:2])
+ggplot(df2,aes(PC1,PC2, col=occ1990dd, fill=occ1990dd)) +
+  stat_ellipse(geom = "polygon", col = "black", alpha =0.5) +
+  scale_x_continuous(limits = c(-1, 1))
+  geom_point(shape = 21, col="black")
+```
