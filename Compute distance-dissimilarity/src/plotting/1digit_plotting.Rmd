@@ -1,0 +1,77 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+```
+
+1 DIGIT DECADE
+```{r}
+setwd("~/Dropbox/thesis/5_APST/julia_compute_distance/src") 
+
+
+df <- read_csv("../output/1digit_decade/spca_distance_7.csv")[,-1]
+
+split <- split(df, with(df, interaction(decade)), drop = TRUE)
+
+split$"1990"
+
+split$"1990" <- split$"1990"[,-2:-3]
+
+df <- inner_join(split$"1990", split$"1980", by = c("occupation"), suffix=c("_1990","_1980"))
+
+df$distance_change <- df$mean_distance_1990 - df$mean_distance_1980
+
+
+
+df$`occupation`[df$`1digit occ` == 2] <- 'Sales/Admin'
+df$`occupation`[df$`1digit occ` == 1] <- 'Tech/Manage/Professional'
+df$`occupation`[df$`1digit occ` == 5] <- 'Production/Operators'
+df$`occupation`[df$`1digit occ` == 6] <- 'Production/Operators'
+
+
+
+ggplot(df, aes(reorder(occupation, `1digit occ`), y = distance_change, color=`occupation`)) + geom_point() +   
+  theme_light()+
+  theme(legend.title=element_blank()) +
+  
+   scale_color_manual(values = c("black", "black","darkgreen", "#CA0020", "blue")) +
+  theme(axis.text.x=element_text(angle=65,size=10))+
+labs(title="Occupation, sorted by code v Change in  distance SPCA (1980s-1990s)", x="Occupation, sorted by code", y="Change in  distance (1980s-1990s)")
+ggsave("../output/spca__change_distance_2digit_occ_pc1.png", width = 10, height=7)
+```
+
+
+```{r}
+df <- read_csv("../output/1digit_5yr/pca_distance_3.csv")[,-1]
+df <- df %>%
+  filter(`occupation` != "Farm/Fish/Forest")
+
+df$`occupation`[df$`1digit occ` == 2] <- 'Sales/Admin'
+df$`occupation`[df$`1digit occ` == 1] <- 'Tech/Manage/Professional'
+df$`occupation`[df$`1digit occ` == 5] <- 'Production/Operators'
+df$`occupation`[df$`1digit occ` == 6] <- 'Production/Operators'
+
+
+ggplot(df, aes(x =`decade`, y = mean_distance, color=`occupation`)) + geom_line() +   
+  theme_light()+
+  theme(legend.title=element_blank()) +
+  
+   scale_color_manual(values = c("black", "darkgreen", "#CA0020", "blue")) +
+  theme(axis.text.x=element_text(angle=65,size=10))+
+labs(title="5yr v Mean Distance PCA_3 (1980s-1990s)", x="Occupation, sorted by code", y="Mean distance")
+ggsave("/Users/jsusser/Desktop/5.png", width = 10, height=7)
+```
+
+
+
+
+
+
+

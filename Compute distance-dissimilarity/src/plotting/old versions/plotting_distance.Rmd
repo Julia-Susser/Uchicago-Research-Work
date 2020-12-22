@@ -1,0 +1,87 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+```
+
+2 DIGIT DECADE
+```{r}
+setwd("~/Dropbox/thesis/5_APST/julia_compute_distance/src") 
+
+
+df <- read_csv("../output/2digit_decade/spca_distance_7.csv")[,-1]
+
+split <- split(df, with(df, interaction(decade)), drop = TRUE)
+
+split$"1990"
+
+split$"1990" <- split$"1990"[,-2:-4]
+
+df <- inner_join(split$"1990", split$"1980", by = c("occupation"), suffix=c("_1990","_1980"))
+
+df$log_distance_change <- df$mean_distance_1990 - df$mean_distance_1980
+lf <- read_csv("/Users/jsusser/Dropbox/thesis/4_CPS/clean_HPV/output/Codes/1digit_occupations.csv")[,-1]
+
+
+lf$`occupation`[lf$`codes` == 2] <- 'Sales/Admin'
+lf$`occupation`[lf$`codes` == 1] <- 'Tech/Manage/Professional'
+lf$`occupation`[lf$`codes` == 5] <- 'Production/Operators'
+lf$`occupation`[lf$`codes` == 6] <- 'Production/Operators'
+df <- df %>%
+  left_join(lf, by=c('1digit occ'='codes'))
+
+
+ggplot(df, aes(reorder(occupation.x, `2digit occ`), y = log_distance_change, color=`occupation.y`)) + geom_point() +   
+  theme_light()+
+  theme(legend.title=element_blank()) +
+  
+   scale_color_manual(values = c("black", "black","darkgreen", "#CA0020", "blue")) +
+  theme(axis.text.x=element_text(angle=65,size=10))+
+labs(title="Occupation, sorted by code v Change in log distance SPCA (1980s-1990s)", x="Occupation, sorted by code", y="Change in log distance (1980s-1990s)")
+ggsave("../output/spca_log_change_distance_2digit_occ_pc1.png", width = 10, height=7)
+
+```
+
+2 DIGIT DECADE W JUST SERVICE AND PRODUCTION
+```{r}
+df <- read_csv("../output/pca_distance_7.csv")[,-1] 
+
+split <- split(df, with(df, interaction(decade)), drop = TRUE)
+
+split$"1990" <- split$"1990"[,-2:-4]
+
+df <- inner_join(split$"1990", split$"1980", by = c("occupation"), suffix=c("_1990","_1980"))
+
+df$log_distance_change <- df$mean_distance_1990 - df$mean_distance_1980
+lf <- read_csv("/Users/jsusser/Dropbox/thesis/4_CPS/clean_HPV/output/Codes/1digit_occupations.csv")[,-1]
+
+
+lf$`occupation`[lf$`codes` == 2] <- 'Sales/Admin'
+lf$`occupation`[lf$`codes` == 1] <- 'Tech/Manage/Professional'
+lf$`occupation`[lf$`codes` == 5] <- 'Production/Operators'
+lf$`occupation`[lf$`codes` == 6] <- 'Production/Operators'
+
+df <- df %>%
+  left_join(lf, by=c('1digit occ'='codes'))
+df <- subset(df, `occupation.y`== 'Production/Operators' | `occupation.y`== 'Service')
+
+ggplot(df, aes(reorder(occupation.x, `2digit occ`), y = log_distance_change, color=`occupation.y`)) + geom_point() +  
+    theme_light()+
+  theme(legend.title=element_blank()) +
+
+   scale_color_manual(values = c("black", "#CA0020")) +
+  theme(axis.text.x=element_text(angle=65,size=10))+
+labs(title="Occupation, sorted by code v Change in log pc1 distance (1980s-1990s)", x="Occupation, sorted by code", y="Change in log pc1 distance (1980s-1990s)")
+ggsave("../output/pca_log_change_distance_2digit_pc1-service-production.png", width = 10, height=7)
+```
+
+
+
+
