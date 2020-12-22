@@ -17,3 +17,6 @@ Found how routineness changed for each occupation over time based on advertiseme
   1.Found how Routine Manual, Nonroutine Manual, Nonroutine Analytic, Nonroutine Interactive, Routine Cognitive skills changed for sectors by finding the weighted mean of each skill within a sector. 
 
 
+
+<img width="534" alt="Screen Shot 2020-12-22 at 12 02 02 PM" src="https://user-images.githubusercontent.com/57605923/102928491-a36e0880-444d-11eb-8671-0de1f52eb2ba.png">
+
