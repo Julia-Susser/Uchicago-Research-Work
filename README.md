@@ -19,15 +19,28 @@ Found how routineness changed for each occupation over time based on advertiseme
 
 
 <img width="534" alt="Screen Shot 2020-12-22 at 12 02 02 PM" src="https://user-images.githubusercontent.com/57605923/102928491-a36e0880-444d-11eb-8671-0de1f52eb2ba.png">
+Path: ~ /Uchicago Research Work/Routineness Ad Graphs/src/Routineness v Specialization/routine_vs_specialization.Rmd
+Languages: R, ggplot2
+First, I read in a dataframe with dissimilarity within each two digit occupation and the values of routineness. Then, I filtered for 1975 and I merged in 2digit and 1 digit occupation labels. Next, I scaled the routineness and dissimilarity values from 0-1 through this formula: (value - minimum value for that column)  / (maximum value - minimum value). Next, I graphed the dissimilarity/specialization values on the x axis and the routineness values on the y axis. For example, the graph above shows that Tech/Manage/Professional is the most specialized and the most Nonroutine Analytic in 1975. 
 
 
 <img width="343" alt="Screen Shot 2020-12-22 at 12 00 02 PM" src="https://user-images.githubusercontent.com/57605923/102928500-a5d06280-444d-11eb-87b3-0731c2e9bb41.png">
+Path: ~ /Uchicago Research Work/CPS Cleaning and Graphs/src/Graphs/R graphs/mean_log_wage_by_occ graph_3digit.Rmd
+Languages: R, ggplot2
+First, I split the data into two data frames with years 1983 and 2001 (max and min years).  Next for both dataframes, I grouped the data by three digit occupation and calculated the weighted mean log wage from each three digit occupation. To find the difference of the mean log wage between 1983 and 2001 for each three digit occupation, I contacted the two aggregate data frames and subtracted the 1983 mean log wage from the 2001 mean log wage. Then, I merged in the one digit occupation labels with the data frame. Finally, I plotted the data. I plotted the three digit occupation on the x column but reordered by 1983 occupational mean log wage. On the y column, I plotted change in mean log hourly wage. Along with creating a smooth line that highlighted trends, I filled the data points based on the one digit occupation.
 
 
 <img width="361" alt="Screen Shot 2020-12-22 at 12 00 09 PM" src="https://user-images.githubusercontent.com/57605923/102928501-a7018f80-444d-11eb-98d8-f507599744b0.png">
+
 <img width="548" alt="Screen Shot 2020-12-22 at 11 59 22 AM" src="https://user-images.githubusercontent.com/57605923/102928502-a79a2600-444d-11eb-9711-be76db53811d.png">
+
+
 <img width="377" alt="Screen Shot 2020-12-22 at 12 00 23 PM" src="https://user-images.githubusercontent.com/57605923/102928503-a832bc80-444d-11eb-9816-fa874b5ca7a5.png">
+
+
 <img width="367" alt="Screen Shot 2020-12-22 at 11 59 28 AM" src="https://user-images.githubusercontent.com/57605923/102928504-a832bc80-444d-11eb-8d67-889a2b17ea91.png">
+
+
 <img width="522" alt="Screen Shot 2020-12-22 at 12 00 33 PM" src="https://user-images.githubusercontent.com/57605923/102928505-a8cb5300-444d-11eb-9d84-3ac215c11538.png">
 <img width="534" alt="Screen Shot 2020-12-22 at 11 59 44 AM" src="https://user-images.githubusercontent.com/57605923/102928507-a8cb5300-444d-11eb-973d-2c78f743a0f5.png">
 <img width="302" alt="Screen Shot 2020-12-22 at 12 01 53 PM" src="https://user-images.githubusercontent.com/57605923/102928509-a963e980-444d-11eb-9521-14d401712634.png">
