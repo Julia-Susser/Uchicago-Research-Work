@@ -171,5 +171,32 @@ Languages: Python, Pandas, Matplotlib, Numpy
 <br/>
 To create this graph, I made an array of arrays. First, I created an array by sex, then inside of it, I created an arrays by year. Next, I created a loop where I first grabbed the male array then the female array, and inside  of this loop, I calculated the weighted mean average age by year of the inner array and plotted the line. 
 
+<br /><br /><br /><br />
+
+
+PCA Code: 
+<br />
+Principal Component Analysis determines whether occupations have become more similar to each other over time based on the skills required (data gathered through employment advertisements). PCA code uses multiple linear regressions and different variables to group items, in this case occupations. First, I created a matrix with each occupation and skill. Then, I ran this matrix through the PCA code, which created another matrix with each occupation and its PC values. PC values are determined by where the occupation is on each regression line. The regression lines are the best fit line for all of the occupations based on the skills required. Indeed, each regression line (PC) has a different value for each occupation.  However, since PC2 finds a regression line that is perpendicular to PC1, and PC3 finds a regression line that is perpendicular to PC1 and PC2, etc. PC1 accounts for the most variance between occupations. In short, PCA code takes the skills for each occupation and is able to put a value on each occupation based on where it falls on the regression line of skills for each occupation. These PC values demonstrate how similar and different each occupation is. 
+<br />
+First, I read in a dataframe with the occupations versus skills. Next I sorted the dataframe by year and three digit occupations. To compute the PCA by decade, I created a for loop that filtered through the data from each decade. In this loop, I found the aggregate mean skill of each occupation in the decade. Next, I had to check that all columns had a variance in skills because otherwise I would not be able to scale the PCA code as there would be a zero division error. To do this I first applied a variance to each column (skill). If the number of skills with a variance of zero did not equal zero then the function would stop. This code returns a dataframe with the PCs for each occupation. I wrote the PCA code by decade, 5year bins and all years into different csv files. 
+<br />
+I ran the PCA using this function:
+ prcomp(lf, scale = TRUE, center = TRUE, rank. = num)  
+I ran the Sparce PCA using this function:
+lf.spca <- robspca(lf, scale = TRUE, center = TRUE, k = num)  
+I ran the kernel PCA using this function: 
+kpc <- kpca(~.,data=df,kernel="rbfdot", kpar=list(sigma=0.2),features=7)
+*It is slower if you calculate the PCA with the number of PCs that you want but it is also more accurate. I used 3,4 and 7 PCs, so I ran this function three times per decade. 
+<br />
+<br />
+
+Calculating Dissimilarity/Specialization: 
+<br />
+The PCA code gave us a matrix with PC values for each occupation. By computing the average variation of the PCs for each occupation within a sector, we are able to put a number on the similarity of jobs in a certain occupational sector. The number is the dissimilarity within an occupation also known as the specialization.
+<br />
+<br />
+I read in the CPS and PCA data. I grouped the CPS data by 3 digit occupations and decade to find the weighted number of people in each occupation. Next I grouped the PCA data by 2 digit occupation and decade to find the weighted average PCs for each 2digit occupation. By finding the distance of each 3digit PC from the weighted mean PC of their 2digit occupation, I was able to calculate the distance from the mean of each PC. To find the total distance from the 2digit occupation PC mean, I added up all the distances (PC1 + PC2 + ect.) . To find the dissimilarity within each two digit occupation, I found the weighted mean of each 3digit occupation's total distance. I completed this process with 3,4,and 7 PCs, between 5 year bins and for the dissimilarity within 1 digit occupations. 
+
+
 
 
