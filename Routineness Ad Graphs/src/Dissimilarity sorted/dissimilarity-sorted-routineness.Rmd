@@ -1,0 +1,153 @@
+---
+title: "R Notebook"
+#output: html_notebook
+---
+
+
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(haven)
+library(ggpubr)
+setwd("~/Dropbox/thesis/5_APST/keyword/src") 
+kf <- read_dta("../input/data_by_occ_code_year.dta")
+
+
+kf$`two digit` =cut(kf$occ_code,
+                 breaks = c(0,22, 37,200, 235,283,389,408,427,444,447,455,472,498,549,599,617,699,799,890), labels=c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19))
+kf <- kf %>%
+  filter(year == 1980) 
+kf <- kf %>%
+  group_by(`two digit`) %>%
+    summarize(nramean = weighted.mean(spitz_nr_analytic, ct2), nrimean = weighted.mean(spitz_nr_inter, ct2), rcmean = weighted.mean(spitz_r_cognitive, ct2), nrmmean = weighted.mean(spitz_nr_manual, ct2), rmmean = weighted.mean(spitz_r_manual, ct2))
+kf
+```
+
+
+```{r}
+setwd("~/Dropbox/thesis/5_APST/julia_compute_distance/src") 
+
+
+df <- read_csv("../output/2digit_decade/pca_distance_3.csv")[,-1]
+
+split <- split(df, with(df, interaction(decade)), drop = TRUE)
+
+
+
+split$"1990" <- split$"1990"[,-2:-4]
+
+df <- inner_join(split$"1990", split$"1980", by = c("occupation"), suffix=c("_1990","_1980"))
+
+df$distance_change <- df$mean_distance_1990 - df$mean_distance_1980
+lf <- read_csv("/Users/jsusser/Dropbox/thesis/4_CPS/clean_HPV/output/Codes/1digit_occupations.csv")[,-1]
+
+lf <- lf %>%
+  filter(codes != 4)
+lf$`occupation`[lf$`codes` == 2] <- 'Sales/Admin'
+lf$`occupation`[lf$`codes` == 1] <- 'Tech/Manage/Professional'
+lf$`occupation`[lf$`codes` == 5] <- 'Production/Operators'
+lf$`occupation`[lf$`codes` == 6] <- 'Production/Operators'
+df <- df %>%
+  inner_join(lf, by=c('1digit occ'='codes'))
+kf$`2occ` <- as.numeric(row.names(kf))
+df <- df %>%
+  inner_join(kf, by=c('2digit occ'='2occ'))
+df
+```
+
+
+
+
+
+```{r}
+df <- arrange(df, nramean)
+df$id <- as.numeric(row.names(df))
+p1 <- ggplot(df, aes(x=id, y=distance_change)) + geom_point(size=5, aes(color=`occupation.y`))+  geom_smooth(se=F,colour="orange")+
+  scale_x_continuous(breaks = df$id,labels = df$occupation.x)+
+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen")) + 
+  theme_light() +
+  theme(panel.grid.minor.x = element_blank())+
+  theme(legend.title=element_blank())+
+  
+  theme(axis.text.x=element_text(angle=65,size=10))+labs(title="Change in Distance (pca3), sorted by occupational nonroutine analytic skill", x="Occupation, sorted by 1980 weighted nonroutine analytic (asc)", y="Change in distance from 1980-1990(higher-more dissimilarity)")
+
+
+
+df <- arrange(df, nrimean)
+df$id <- as.numeric(row.names(df))
+p2 <- ggplot(df, aes(x=id, y=distance_change)) + geom_point(size=5, aes(color=`occupation.y`))+  geom_smooth(se=F, colour="orange")+
+  scale_x_continuous(breaks = df$id,labels = df$occupation.x)+
+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen")) + 
+  theme_light() +
+  theme(panel.grid.minor.x = element_blank())+
+  theme(legend.title=element_blank())+
+  
+  theme(axis.text.x=element_text(angle=65,size=10))+labs(title="Change in Distance (pca3), sorted by occupational nonroutine interactive skill", x="Occupation, sorted by 1980 weighted nonroutine interactive (asc)", y="Change in distance from 1980-1990(higher-more dissimilarity)")
+
+
+
+
+
+df <- arrange(df, rcmean)
+df$id <- as.numeric(row.names(df))
+p3 <- ggplot(df, aes(x=id, y=distance_change)) + geom_point(size=5, aes(color=`occupation.y`))+  geom_smooth(se=F, colour="orange")+
+  scale_x_continuous(breaks = df$id,labels = df$occupation.x)+
+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen")) + 
+  theme_light() +
+  theme(panel.grid.minor.x = element_blank())+
+  theme(legend.title=element_blank())+
+  
+  theme(axis.text.x=element_text(angle=65,size=10))+labs(title="Change in Distance (pca3), sorted by occupational routinue cognitive skill", x="Occupation, sorted by 1980 weighted routine cognitive (asc)", y="Change in distance from 1980-1990(higher-more dissimilarity)")
+
+
+
+df <- arrange(df, nrmmean)
+df$id <- as.numeric(row.names(df))
+p4 <- ggplot(df, aes(x=id, y=distance_change)) + geom_point(size=5, aes(color=`occupation.y`))+  geom_smooth(se=F, colour="orange")+
+  scale_x_continuous(breaks = df$id,labels = df$occupation.x)+
+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen")) + 
+  theme_light() +
+  theme(panel.grid.minor.x = element_blank())+
+  theme(legend.title=element_blank())+
+  
+  theme(axis.text.x=element_text(angle=65,size=10))+labs(title="Change in Distance (pca3), sorted by occupational nonroutine manual skill", x="Occupation, sorted by 1980 weighted nonroutine manual (asc)", y="Change in distance from 1980-1990(higher-more dissimilarity)")
+
+
+
+
+
+df <- arrange(df, rmmean)
+df$id <- as.numeric(row.names(df))
+p5 <- ggplot(df, aes(x=id, y=distance_change)) + geom_point(size=5, aes(color=`occupation.y`))+  geom_smooth(se=F, colour="orange")+
+  scale_x_continuous(breaks = df$id,labels = df$occupation.x)+
+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen")) + 
+  theme_light() +
+  theme(panel.grid.minor.x = element_blank())+
+  theme(legend.title=element_blank())+
+  
+  theme(axis.text.x=element_text(angle=65,size=10))+labs(title="Change in Distance (pca3), sorted by occupational routine manual skill", x="Occupation, sorted by 1980 weighted nroutine manual (asc)", y="Change in distance from 1980-1990(higher-more dissimilarity)")
+```
+
+
+```{r}
+ggarrange(p1,p2,p3, p4, p5,
+          ncol = 1, nrow = 1) %>%
+ggexport( filename = "../output/change_in_dissimilarity_sorted_by_all.pdf")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

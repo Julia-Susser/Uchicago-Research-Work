@@ -1,0 +1,130 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(haven)
+library(ggpubr)
+setwd("~/Dropbox/thesis/5_APST/keyword/src") 
+df <- read_dta("../input/data_by_occ_code_year.dta")
+
+df <- df %>% select(year, occ_code, ct2, starts_with("spitz"))
+lf <- read_csv("../../../4_CPS/clean_HPV/output/Codes/2digit_occupations.csv")
+lf <- lf %>%
+  select(-X1)
+
+
+
+
+  
+df$`two digit` =cut(df$occ_code,
+                 breaks = c(0,22, 37,200, 235,283,389,408,427,444,447,455,472,498,549,599,617,699,799,890), labels=c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19))
+
+df <- df %>%
+  group_by(`two digit`, year) %>%
+    summarize(nramean = weighted.mean(spitz_nr_analytic, ct2), nrimean = weighted.mean(spitz_nr_inter, ct2), rcmean = weighted.mean(spitz_r_cognitive, ct2), nrmmean = weighted.mean(spitz_nr_manual, ct2), rmmean = weighted.mean(spitz_r_manual, ct2))
+
+df$`two digit` <- as.character(df$`two digit`)
+lf$codes <- as.character(lf$codes)
+
+
+df <- df %>%
+  inner_join(lf, by=c('two digit'='codes'))
+```
+
+
+
+
+```{r}
+
+p1 <-ggplot(df, aes(y = nramean, x = year,color = `occupation`)) + 
+  geom_smooth(se=F)+
+  theme(axis.line = element_line(colour = "black"),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank()) +
+theme(legend.title=element_blank())+
+  
+
+  labs(y = "Mention per Ad")+
+  ggtitle("Nonroutinue Analytic")
+
+
+
+
+p2 <- ggplot(df, aes(y = nrimean, x = year,color = `occupation`)) + 
+  geom_smooth(se=F)+
+  theme(axis.line = element_line(colour = "black"),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank()) +
+theme(legend.title=element_blank())+
+  
+
+  labs(y = "Mention per Ad")+
+  ggtitle("Nonroutinue Interactive")
+
+p3 <- ggplot(df, aes(y = nrmmean, x = year,color = `occupation`)) + 
+  geom_smooth(se=F)+
+  theme(axis.line = element_line(colour = "black"),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank()) +
+theme(legend.title=element_blank())+
+  
+
+  labs(y = "Mention per Ad")+
+  ggtitle("Nonroutinue Manual")
+
+p4 <- ggplot(df, aes(y = rcmean, x = year,color = `occupation`)) + 
+  geom_smooth(se=F)+
+  theme(axis.line = element_line(colour = "black"),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank()) +
+theme(legend.title=element_blank())+
+ 
+
+  labs(y = "Mention per Ad")+
+  ggtitle("Routinue Cognitive")
+
+
+p5 <- ggplot(df, aes(y = rmmean, x = year,color = `occupation`)) + 
+  geom_smooth(se=F)+
+  theme(axis.line = element_line(colour = "black"),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.border = element_blank(),
+    panel.background = element_blank()) +
+theme(legend.title=element_blank())+
+ 
+
+  labs(y = "Mention per Ad")+
+  ggtitle("Routinue Manual")
+
+ggarrange(p1, p2, p3, p4, p5, 
+          ncol = 1, nrow = 2)%>%
+  ggexport( filename = "../output/grid_ad_mention_2digit.pdf")
+
+```
+
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+

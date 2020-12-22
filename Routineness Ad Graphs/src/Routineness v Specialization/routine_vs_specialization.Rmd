@@ -1,0 +1,101 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+df <- read_csv("routine_and_diss.csv")
+```
+
+
+```{r}
+names(df)
+```
+
+```{r}
+df <- df %>%
+  filter(period == 1975)
+lf <- read_csv("1digit_occupations.csv")[,-1]
+lf <- lf %>%
+  filter(codes != 4)
+lf$`occupation`[lf$`codes` == 2] <- 'Sales/Admin'
+lf$`occupation`[lf$`codes` == 1] <- 'Tech/Manage/Professional'
+lf$`occupation`[lf$`codes` == 5] <- 'Production/Operators'
+lf$`occupation`[lf$`codes` == 6] <- 'Production/Operators'
+df <- df %>%
+  inner_join(lf, by=c('occ1990dd_1digit'='codes'))
+kf <- read_csv("2digit_occupations.csv")[,-1]
+df <- df %>%
+  inner_join(kf, by=c('occ1990dd_2digit'='codes'))
+df$spitz_nr_analytic_C <- (df$spitz_nr_analytic_C - min(df$spitz_nr_analytic_C))/(max(df$spitz_nr_analytic_C)-min(df$spitz_nr_analytic_C))
+df
+```
+
+
+```{r}
+df$spitz_r_cognitive_C <- (df$spitz_r_cognitive_C - min(df$spitz_r_cognitive_C))/(max(df$spitz_r_cognitive_C)-min(df$spitz_r_cognitive_C))
+
+df$spitz_r_manual_C <- (df$spitz_r_manual_C - min(df$spitz_r_manual_C))/(max(df$spitz_r_manual_C)-min(df$spitz_r_manual_C))
+
+df$spitz_nr_inter_C <- (df$spitz_nr_inter_C - min(df$spitz_nr_inter_C))/(max(df$spitz_nr_inter_C)-min(df$spitz_nr_inter_C))
+
+df$spitz_nr_manual_C <- (df$spitz_nr_manual_C - min(df$spitz_nr_manual_C))/(max(df$spitz_nr_manual_C)-min(df$spitz_nr_manual_C))
+```
+
+
+```{r}
+p1 <- ggplot(df, aes(reorder(occupation.y, dissimilarity2_mp), y=spitz_nr_analytic_C, color=`occupation.x`)) +theme_light() +
+  theme(legend.title=element_blank())+ geom_point(size=5)+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen","darkgreen","darkgreen","darkgreen"))+theme(axis.text.x=element_text(angle=65,size=10))+labs(title="1975 Nonroutine Analytic vs Occupation, sorted by 1975 specialization", x="Occupation, sorted by 1975 specialization", y="1975 Nonroutine analytic skill")
+
+p2 <- ggplot(df, aes(reorder(occupation.y, dissimilarity2_mp), y=spitz_r_cognitive_C, color=`occupation.x`)) +theme_light() +
+  theme(legend.title=element_blank())+ geom_point(size=5)+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen","darkgreen","darkgreen","darkgreen"))+theme(axis.text.x=element_text(angle=65,size=10))+labs(title="1975 Routine Cognitive vs Occupation, sorted by 1975 specialization", x="Occupation, sorted by 1975 specialization", y="1975 Routine Cognitive skill")
+
+p3 <- ggplot(df, aes(reorder(occupation.y, dissimilarity2_mp), y=spitz_r_manual_C, color=`occupation.x`)) +theme_light() +
+  theme(legend.title=element_blank())+ geom_point(size=5)+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen","darkgreen","darkgreen","darkgreen"))+theme(axis.text.x=element_text(angle=65,size=10))+labs(title="1975 Routine Manual vs Occupation, sorted by 1975 specialization", x="Occupation, sorted by 1975 specialization", y="1975 Routine manual skill")
+
+p4 <- ggplot(df, aes(reorder(occupation.y, dissimilarity2_mp), y=spitz_nr_inter_C, color=`occupation.x`)) +theme_light() +
+  theme(legend.title=element_blank())+ geom_point(size=5)+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen","darkgreen","darkgreen","darkgreen"))+theme(axis.text.x=element_text(angle=65,size=10))+labs(title="1975 Nonroutine Interactive vs Occupation, sorted by 1975 specialization", x="Occupation, sorted by 1975 specialization", y="1975 Nonroutine interactive skill")
+
+p5 <- ggplot(df, aes(reorder(occupation.y, dissimilarity2_mp), y=spitz_nr_manual_C, color=`occupation.x`)) +theme_light() +
+  theme(legend.title=element_blank())+ geom_point(size=5)+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen","darkgreen","darkgreen","darkgreen"))+theme(axis.text.x=element_text(angle=65,size=10))+labs(title="1975 Nonroutine Manual vs Occupation, sorted by 1975 specialization", x="Occupation, sorted by 1975 specialization", y="1975 Nonroutine manual skill")
+ggarrange(p1, p2, p3, p4, p5, 
+          ncol = 1, nrow = 1) %>%
+  ggexport( filename = "routiness_v_specialization.pdf")
+```
+
+```{r}
+df$dissimilarity2_mp <- (df$dissimilarity2_mp - min(df$dissimilarity2_mp))/(max(df$dissimilarity2_mp)-min(df$dissimilarity2_mp))
+
+p1 <- ggplot(df, aes(x=dissimilarity2_mp, y=spitz_nr_analytic_C, color=`occupation.x`)) +theme_light() +
+  theme(legend.title=element_blank())+ geom_point(size=5)+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen","darkgreen","darkgreen","darkgreen"))+theme(axis.text.x=element_text(angle=65,size=10))+labs(title="1975 Nonroutine Analytic vs Occupation, sorted by 1975 specialization", x="Occupation, sorted by 1975 specialization", y="1975 Nonroutine analytic skill")
+
+p2 <- ggplot(df, aes(x=dissimilarity2_mp, y=spitz_r_cognitive_C, color=`occupation.x`)) +theme_light() +
+  theme(legend.title=element_blank())+ geom_point(size=5)+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen","darkgreen","darkgreen","darkgreen"))+theme(axis.text.x=element_text(angle=65,size=10))+labs(title="1975 Routine Cognitive vs Occupation, sorted by 1975 specialization", x="Occupation, sorted by 1975 specialization", y="1975 Routine Cognitive skill")
+
+p3 <- ggplot(df, aes(x=dissimilarity2_mp, y=spitz_r_manual_C, color=`occupation.x`)) +theme_light() +
+  theme(legend.title=element_blank())+ geom_point(size=5)+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen","darkgreen","darkgreen","darkgreen"))+theme(axis.text.x=element_text(angle=65,size=10))+labs(title="1975 Routine Manual vs Occupation, sorted by 1975 specialization", x="Occupation, sorted by 1975 specialization", y="1975 Routine manual skill")
+
+p4 <- ggplot(df, aes(x=dissimilarity2_mp, y=spitz_nr_inter_C, color=`occupation.x`)) +theme_light() +
+  theme(legend.title=element_blank())+ geom_point(size=5)+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen","darkgreen","darkgreen","darkgreen"))+theme(axis.text.x=element_text(angle=65,size=10))+labs(title="1975 Nonroutine Interactive vs Occupation, sorted by 1975 specialization", x="Occupation, sorted by 1975 specialization", y="1975 Nonroutine interactive skill")
+
+p5 <- ggplot(df, aes(x=dissimilarity2_mp, y=spitz_nr_manual_C, color=`occupation.x`)) +theme_light() +
+  theme(legend.title=element_blank())+ geom_point(size=5)+scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen","darkgreen","darkgreen","darkgreen"))+theme(axis.text.x=element_text(angle=65,size=10))+labs(title="1975 Nonroutine Manual vs Occupation, sorted by 1975 specialization", x="Occupation, sorted by 1975 specialization", y="1975 Nonroutine manual skill")
+ggarrange(p1, p2, p3, p4, p5, 
+          ncol = 1, nrow = 1) %>%
+  ggexport( filename = "routiness_v_specialization2.pdf")
+```
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+

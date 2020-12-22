@@ -1,0 +1,126 @@
+---
+title: "R Notebook"
+#output: html_notebook
+---
+
+
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(haven)
+library(ggpubr)
+setwd("~/Dropbox/thesis/5_APST/keyword/src") 
+kf <- read_dta("../input/data_by_occ_code_year.dta")
+
+kf$`two digit` =cut(kf$occ_code,
+                 breaks = c(0,22, 37,200, 235,283,389,408,427,444,447,455,472,498,549,599,617,699,799,890), labels=c(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19))
+
+a <- kf %>%
+  filter(year == 1983) %>%
+    group_by(`two digit`) %>%
+      summarize(words_1983 = sum(words*ct2))
+b <- kf %>%
+  filter(year == 2000) %>%
+    group_by(`two digit`) %>%
+      summarize(words_2000 = sum(words*ct2))
+
+kf <- a %>%
+  full_join(b, by=c('two digit'))
+kf$dif_words <- kf$words_2000 - kf$words_1983
+```
+
+
+
+
+
+```{r}
+
+df <- read_csv("../../../4_CPS/clean_HPV/output/current_values.csv")
+
+
+
+
+avg1980s <- df %>%
+  filter(Year==min(df$Year)) %>%
+    group_by(`2digit occupation`) %>%
+      summarize(`1digit occupation` = first(`1digit occupation`),mean = weighted.mean(Wage, Asecwt))
+
+
+avg2000s <- df %>%
+  filter(Year==max(df$Year)) %>%
+  group_by(`2digit occupation`) %>%
+  summarize(mean = weighted.mean(Wage, Asecwt))
+
+
+hf <- avg1980s %>%
+  full_join(avg2000s, 
+            by=c('2digit occupation'='2digit occupation'), 
+            suffix=c("_1980","_2000")
+            )
+hf <- signif(hf, digits = 4)
+
+hf <- hf %>%
+  mutate(dif_wage = mean_2000 - mean_1980)
+
+lf <- read_csv("../../../4_CPS/clean_HPV/output/Codes/2digit_occupations.csv")
+lf <- lf %>%
+  select(-X1)
+names(lf)[names(lf)=="occupation"] <- "2digit name"
+
+hf <- hf %>%
+  left_join(lf, by=c('2digit occupation'='codes'))
+
+
+lf <- read_csv("../../../4_CPS/clean_HPV/output/Codes/1digit_occupations.csv")
+lf <- lf %>%
+  select(-X1)
+
+hf <- hf %>%
+  filter(`1digit occupation` != 4)
+
+hf$`1digit occupation`[hf$`1digit occupation` == 6] <- 5
+lf$`occupation`[lf$`codes` == 2] <- 'Sales/Admin'
+lf$`occupation`[lf$`codes` == 1] <- 'Tech/Manage/Professional'
+lf$`occupation`[lf$`codes` == 5] <- 'Production/Operators'
+names(lf)[names(lf)=="occupation"] <- "1digit name"
+hf <- hf %>%
+  left_join(lf, by=c('1digit occupation'='codes'))
+
+kf$`2occ` <- as.numeric(row.names(kf))
+hf <- hf %>%
+  left_join(kf, by=c('2digit occupation'='2occ'))
+hf %>%
+  select(`2digit name`, dif_words)
+```
+
+
+```{r}
+ggplot(hf, aes(reorder(`2digit name`, dif_words), y=dif_wage, color=`1digit name`)) + geom_point(size=5)+  
+  theme_light() +
+  theme(legend.title=element_blank())+
+  
+  
+  scale_color_manual(values = c("blue2", "black", "#CA0020","darkgreen")) + 
+  theme(axis.text.x=element_text(angle=65,size=10))+
+  
+  
+ labs(title="Change in weighted mean wage (1983-2001), sorted by sum of all words*ads in the sector", x="Occupation, sorted by sum of all words*ads in the sector (asc)", y="Change in weighted mean wage (1983-2001)")
+
+
+ggsave("/Users/jsusser/Desktop/r.png", width = 10, height=10)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
