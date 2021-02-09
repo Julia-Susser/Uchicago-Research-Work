@@ -4,7 +4,7 @@ My Work with Economic Researcher Alex Weinberg:
 <br />
 May-September, 35hrs per week
 <br />
-Languages: R (ggplot2), Python (Pandas, Numpy, Matplotlib)
+Languages: R (ggplot2), Python (Pandas, Numpy, Matplotlib), Stata
 <br /><br />
 Cleaned CPS government Employment Data according to HPV 2010 paper
 <br />
